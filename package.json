@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "fmt": "bunx prettier --write .",
+    "postinstall": "bunx simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "bunx lint-staged"
+  },
+  "lint-staged": {
+    "*": [
+      "bunx prettier --write --ignore-unknown"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none"
+  }
+}
