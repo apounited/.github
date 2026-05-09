@@ -1,19 +1,16 @@
 {
   "scripts": {
-    "fmt": "bunx prettier --write .",
+    "fmt": "bunx oxfmt",
     "postinstall": "bunx simple-git-hooks"
   },
   "simple-git-hooks": {
-    "pre-commit": "bunx lint-staged"
+    "pre-commit": "bunx lint-staged",
+    "commit-msg": "bunx @apounited/verify-commit-msg $1"
   },
   "lint-staged": {
     "*": [
-      "bunx prettier --write --ignore-unknown"
+      "bunx oxfmt --no-error-on-unmatched-pattern",
+      "git add"
     ]
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "none"
   }
 }
