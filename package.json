@@ -5,7 +5,7 @@
   },
   "simple-git-hooks": {
     "pre-commit": "bunx lint-staged",
-    "commit-msg": "bunx @apounited/verify-commit-msg $1"
+    "commit-msg": "bunx @apounited/verify-commit-msg@latest $1"
   },
   "lint-staged": {
     "*": [
