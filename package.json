@@ -9,8 +9,7 @@
   },
   "lint-staged": {
     "*": [
-      "bunx oxfmt --no-error-on-unmatched-pattern",
-      "git add"
+      "bunx oxfmt --no-error-on-unmatched-pattern"
     ]
   }
 }
