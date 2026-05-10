@@ -2,5 +2,6 @@
   "semi": false,
   "singleQuote": true,
   "trailingComma": "none",
-  "sortPackageJson": false
+  "sortPackageJson": false,
+  "ignorePatterns": ["CHANGELOG.md"]
 }
